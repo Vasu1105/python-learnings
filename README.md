@@ -26,3 +26,15 @@ One exception to the first line rule is when the source code starts with a UNIX 
 #!/usr/bin/env python3
 # -*- coding: cp1252 -*-
 ```
+# Notes
+
+The keyword argument end can be used to avoid the newline after the output, or end the output with a different string:
+```
+>>>
+>>> a, b = 0, 1
+>>> while a < 1000:
+...     print(a, end=',')
+...     a, b = b, a+b
+...
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
+```
